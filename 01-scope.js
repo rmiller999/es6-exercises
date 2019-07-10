@@ -5,13 +5,13 @@
 
 var alwaysTrue = true;
 
-function myBarn(petMe) {
+const myBarn = (petMe)  => {
   var animals = {
     petMe: petMe,
   };
   
   if (alwaysTrue) {
-    var animals = {
+    let animals = {
       petMe: "pig",
     };
     var greeting = 'This animal should be a pig; it is a: ' + animals.petMe + '.';
